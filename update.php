@@ -102,12 +102,12 @@ if(fname=='')
 
 </head>
 
-<body>
+<body background="bg-body.jpg">
 
 
 <center>
 <form method="POST" action="update.php" name="reg" onSubmit="return validate()">
-<table border="5" bgcolor="#C0C0C0" height="400px" width="60%"> <h1 ><font color="blue"><b>STUDENT INFORMATION SYSTEM</b></font></h1><br><a href="index.php">HOME</a>&nbsp&nbsp&nbsp&nbsp<a href="update.php">UPDATE</a>&nbsp&nbsp&nbsp&nbsp<a href="delete.php">DELETE</a>&nbsp&nbsp&nbsp&nbsp<a href="search.php">SEARCH</a><br><br></center>
+<table border="5" bgcolor="#C0C0C0" height="400px" width="60%"> <h1 ><font color="blue"><b>STUDENT INFORMATION SYSTEM</b></font></h1><br><a href="index.php" style="font-size:25px; font-family:COMIC SANS MS; color:maroon;">HOME</a>&nbsp&nbsp&nbsp&nbsp<a href="update.php" style="font-size:25px; font-family:COMIC SANS MS; color:MAROON;">UPDATE</a>&nbsp&nbsp&nbsp&nbsp<a href="delete.php" style="font-size:25px; font-family:COMIC SANS MS; color:MAROON;">DELETE</a>&nbsp&nbsp&nbsp&nbsp<a href="search.php" style="font-size:25px; font-family:COMIC SANS MS; color:MAROON;">SEARCH</a><br><br></center>
 
         <tr>
 		<td>FIRST NAME:</td>
@@ -135,7 +135,7 @@ if(fname=='')
 </tr>
 	<tr>
 		<td>ROLL NO:</td>
-		<td><input type="text" name="rn" >Primary Key</td>
+		<td><input type="text" name="rn"></td>
 	</tr>
 	<tr>
 		<td>BRANCH</td>
@@ -183,7 +183,7 @@ if(fname=='')
 <tr>
 <td>Date Of Birth(DD-MM-YYYY)</td>
 <td><select name="dd">
-<option> select day </option>
+<option> select date </option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -191,6 +191,31 @@ if(fname=='')
 <option value="5">5</option>
 <option value="6">6</option>
 <option value="7">7</option>
+<option value="2">8</option>
+<option value="3">9</option>
+<option value="4">10</option>
+<option value="5">11</option>
+<option value="6">12</option>
+<option value="7">13</option>
+<option value="1">14</option>
+<option value="2">15</option>
+<option value="3">16</option>
+<option value="4">17</option>
+<option value="5">18</option>
+<option value="6">19</option>
+<option value="7">20</option>
+<option value="2">21</option>
+<option value="3">22</option>
+<option value="4">23</option>
+<option value="5">24</option>
+<option value="6">25</option>
+<option value="7">26</option>
+<option value="7">27</option>
+<option value="7">28</option>
+<option value="7">29</option>
+<option value="7">30</option>
+<option value="7">31</option>
+
 </select>
 <select name="mm">
 <option> select mounth </option>
@@ -201,15 +226,27 @@ if(fname=='')
 <option value="may">MAY</option>
 <option value="jun">JUN</option>
 <option value="jul">JUL</option>
+<option value="jan">AUG</option>
+<option value="feb">SEP</option>
+<option value="mar">OCT</option>
+<option value="apr">NOV</option>
+<option value="may">DEC</option>
+
 </select>
 <select name="yy">
 <option>select year</option>
-<option value="2014">2014</option>
-<option value="2015">2015</option>
-<option value="2016">2016</option>
-<option value="2017">2017</option>
-<option value="2018">2018</option>
-<option value="2019">2019</option>
+<option value="2014">1989</option>
+<option value="2015">1990</option>
+<option value="2016">1991</option>
+<option value="2017">1992</option>
+<option value="2018">1993</option>
+<option value="2019">1994</option>
+<option value="2014">1995</option>
+<option value="2015">1996</option>
+<option value="2016">1997</option>
+<option value="2017">1998</option>
+<option value="2018">1999</option>
+<option value="2019">2000</option>
 </select>
 </td>
 </tr>
@@ -227,21 +264,62 @@ if(fname=='')
 </html>
 <?php
 require'db_conn.php';
+if( isset($_POST['fn']))
+{
 $fn=$_POST['fn'];
+}
+if( isset($_POST['ln']))
+{
 $ln=$_POST['ln'];
+}
+if( isset($_POST['session']))
+{
 $session=$_POST['session'];
+}
+if( isset($_POST['rn']))
+{
 $rn=$_POST['rn'];
+}
+if( isset($_POST['branch']))
+{
 $branch=$_POST['branch'];
+}
+if( isset($_POST['year']))
+{
 $year=$_POST['year'];
+}
+if( isset($_POST['semester']))
+{
 $semester=$_POST['semester'];
+}
+if( isset($_POST['dd']))
+{
 $dd=$_POST['dd'];
+}
+if( isset($_POST['mm']))
+{
 $mm=$_POST['mm'];
+}
+if( isset($_POST['yy']))
+{
 $yy=$_POST['yy'];
+}
+if( isset($_POST['address']))
+{
 $address=$_POST['address'];
+}
+if( isset($_POST['fn']))
+{
 $cap1=strtoupper($fn);
+}
+if( isset($_POST['ln']))
+{
 $cap2=strtoupper($ln);
+}
+if( isset($_POST['address']))
+{
 $cap3=strtoupper($address);
-
+}
 
 
 if(isset($_POST['submit']))

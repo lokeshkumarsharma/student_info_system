@@ -1,9 +1,10 @@
-
+<html>
+<body background="bg-body.jpg">
 <?php
 
 echo"<center>";
  echo"<form method='POST' action='' name='reg' onSubmit='return validate()'>";
-echo"<table border='6' width='40%' height='80px' bgcolor='silver'> <h1 ><font color='blue'><b>STUDENT INFORMATION SYSTEM</b></font></h1><br><a href='index.php'>HOME</a>&nbsp&nbsp&nbsp&nbsp<a href='update.php'>UPDATE</a>&nbsp&nbsp&nbsp&nbsp<a href='delete.php'>DELETE</a>&nbsp&nbsp&nbsp&nbsp<a href='search.php'>SEARCH</a><br><br></center>";
+echo"<table border='6' width='40%' height='80px' bgcolor='silver'> <h1 ><font color='blue'><b>STUDENT INFORMATION SYSTEM</b></font></h1><br><a href='index.php' style='font-size:25px; font-family:COMIC SANS MS; color:maroon;'>HOME</a>&nbsp&nbsp&nbsp&nbsp<a href='update.php' style='font-size:25px; font-family:COMIC SANS MS; color:maroon;'>UPDATE</a>&nbsp&nbsp&nbsp&nbsp<a href='delete.php' style='font-size:25px; font-family:COMIC SANS MS; color:maroon;'>DELETE</a>&nbsp&nbsp&nbsp&nbsp<a href='search.php' style='font-size:25px; font-family:COMIC SANS MS; color:maroon;'>SEARCH</a><br><br></center>";
 
 echo"<tr><td>
 <center><table bgcolor='silver'>

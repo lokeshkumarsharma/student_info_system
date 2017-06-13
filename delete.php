@@ -4,12 +4,12 @@
 
 </head>
 
-<body>
+<body background="bg-body.jpg">
 
 
 <center>
 <form method="POST" action="">
-<table border="5" bgcolor="#C0C0C0" width="30%" height="100px"> <h1 ><font color="blue"><b>STUDENT INFORMATION SYSTEM</b></font></h1><br><a href="index.php">HOME</a>&nbsp&nbsp&nbsp&nbsp<a href="update.php">UPDATE</a>&nbsp&nbsp&nbsp&nbsp<a href="delete.php">DELETE</a>&nbsp&nbsp&nbsp&nbsp<a href="search.php">SEARCH</a><br><br></center>
+<table border="5" bgcolor="#C0C0C0" width="30%" height="100px"> <h1 ><font color="blue"><b>STUDENT INFORMATION SYSTEM</b></font></h1><br><a href="index.php"  style="font-size:25px; font-family:COMIC SANS MS; color:maroon;">HOME</a>&nbsp&nbsp&nbsp&nbsp<a href="update.php"  style="font-size:25px; font-family:COMIC SANS MS; color:maroon;">UPDATE</a>&nbsp&nbsp&nbsp&nbsp<a href="delete.php"  style="font-size:25px; font-family:COMIC SANS MS; color:maroon;">DELETE</a>&nbsp&nbsp&nbsp&nbsp<a href="search.php"  style="font-size:25px; font-family:COMIC SANS MS; color:maroon;">SEARCH</a><br><br></center>
 
 <tr>
 		<td>ENTER ROLL NO:</td>
